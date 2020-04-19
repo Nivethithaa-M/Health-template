@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Consultation</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/cons.css">
+</head>
+<body>
+<nav>
+      <a href="patient.html"><img class="logo" src="images/logoo.png" /></a>
+      <div id="menu">
+        <ul>
+          <li style="list-style: none"><a href="patient.html" style="color:white">My Home</a></li>
+          <li style="list-style: none"><a href="#" style="color:white">My profile</a></li>
+          <li style="list-style: none"><a href="consult.html"style="color:white">Consult Doctor</a></li>
+          <li style="list-style: none"><a href="appointment.html" style="color:white">Book Appointment</a></li>
+          <li style="list-style: none"><a href="report.html" style="color:white">View Report</a></li>
+          <li style="list-style: none"><a href="feedback.html"style="color:white">Feedback</a></li>
+		  <li style="list-style: none"><a href="file:///C:/Users/Nivethitha/Desktop/Health%20360/home/index.html"style="color:white">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/t3.jpg" alt="" >
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" action="consult.html">
+                        <h2 align="center">Doctor Consultation</h2>
+                        <div class="form-row">
+						    <div class="form-group">
+                                <label for="id">Patient Id :</label>
+                                <input type="number" name="id" id="id" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Patient Name :</label>
+                                <input type="text" name="name" id="name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age :</label>
+                                <input type="number" name="age" id="age" required/>
+                            </div></div>
+					        <div class="form-group">
+                                <label for="docname">Doctor Name :</label>
+                                <input type="text" name="docname" id="docname" required/>
+                            </div>
+                            <div class="form-radio">
+                            <label for="gender" class="radio-label">Gender :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+						<div class="form-row">
+                            <div class="form-group">
+                                <label for="status">Status :</label>
+                                <div class="form-select">
+                                    <select name="status" id="status">
+									    <option value="">Select your Status</option>
+                                        <option value="sin">Single</option>
+                                        <option value="mar">Married</option>
+										<option value="ot">Divorced</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label for="symt">Disease Symptom :</label>
+                                <input type="text" name="symt" id="symt" required/>
+                            </div></div>
+							<div class="form-group">
+                                <label for="area">Affected Area :</label>
+                                <input type="text" name="area" id="area" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="disdays">Disease Identified in days :</label>
+                                <input type="number" name="disdays" id="disdays" required/>
+                            </div>
+                            <div class="form-row">
+                            <div class="form-group">
+                                <label for="distype">Disease Type :</label>
+                                <div class="form-select">
+                                    <select name="distype" id="distype">
+									    <option value="">Select your disease type</option>
+                                        <option value="inf">Infectious diseases</option>
+                                        <option value="def">Deficiency diseases</option>
+                                        <option value="her">Hereditary diseases</option>
+										<option value="cyc">physiological diseases</option>
+										<option value="cyc">Communicable diseases</option>
+										<option value="cyc">Non-Communicable diseases</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="spec">Specialisation :</label>
+                                <div class="form-select">
+                                    <select name="spec" id="spec">
+									    <option value="">Select your specialisation</option>
+									    <option value="gen">General Medicine</option>
+                                        <option value="oph">ENT</option>
+                                        <option value="gyn">Gynecologists</option>
+                                        <option value="neu">Nutritionist</option>
+										<option value="psy">Psychiatrists</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                                </div></div>
+								<div class="form-group">
+                                   <label for="add">Additional Information :</label>
+                                   <input type="text" name="add" id="add">
+                                </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
